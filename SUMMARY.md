@@ -1,3 +1,3 @@
 # Summary
 
-* [第一张](up & going/ch1.md)
+* [第一章](up & going/ch1.md)
