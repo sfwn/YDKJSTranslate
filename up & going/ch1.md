@@ -1,7 +1,7 @@
 # You Don't Know JS: Up & Going
-# 第一张: 进入编程
+# 第一章: 进入编程
 
-Welcome to the *You Don't Know JS* (*YDKJS*) series.
+欢迎来到 *You Dont't Know JS* (*YDKJS*) 系列。
 
 *Up & Going* is an introduction to several basic concepts of programming -- of course we lean toward JavaScript (often abbreviated JS) specifically -- and how to approach and understand the rest of the titles in this series. Especially if you're just getting into programming and/or JavaScript, this book will briefly explore what you need to get *up and going*.
 
