@@ -7,8 +7,6 @@
 
 本书从站在一个很高的层次解释编程的基本原则开始，并假设你在阅读本书之前几乎没有编程经验，希望这些书来帮助你在一条的正确的道路上通过JavaScript来理解编程。
 
-Chapter 1 should be approached as a quick overview of the things you'll want to learn more about and practice to get *into programming*. There are also many other fantastic programming introduction resources that can help you dig into these topics further, and I encourage you to learn from them in addition to this chapter.
-
 第一章是你将要深入学习的知识的一个快速预览以及迈向编程大门的实践。当然还有许多其他有意思的编程介绍资源可以帮助你更深入地挖掘该主题，我鼓励你在本章的基础上额外地去学习它们。
 
 一旦你熟悉了编程基础，第二章将会指导你熟悉JavaScript的编程特点。第二章介绍了JavaScript是什么，但是再一次提醒你，第二章不是完全指导手册--完全的说明是 *YDKJS* 系列丛书剩余书籍的事情！
