@@ -5,19 +5,35 @@
 
 *Up & Going* is an introduction to several basic concepts of programming -- of course we lean toward JavaScript (often abbreviated JS) specifically -- and how to approach and understand the rest of the titles in this series. Especially if you're just getting into programming and/or JavaScript, this book will briefly explore what you need to get *up and going*.
 
+*Up & Going* 是对一些基本编程概念的介绍--当然我们特别倾向于JavaScript(经常被简称为JS)--以及如何慢慢接触并理解该系列丛书其他标题的意思。尤其如果你刚刚开始编程或者学习JavaScript，这本书将会简要地探索你接下来需要学的东西。
+
 This book starts off explaining the basic principles of programming at a very high level. It's mostly intended if you are starting *YDKJS* with little to no prior programming experience, and are looking to these books to help get you started along a path to understanding programming through the lens of JavaScript.
+
+本书从站在一个很高的层次解释编程的基本原则开始，并假设你在阅读本书之前几乎没有编程经验，希望这些书来帮助你在一条的正确的道路上通过JavaScript来理解编程。
 
 Chapter 1 should be approached as a quick overview of the things you'll want to learn more about and practice to get *into programming*. There are also many other fantastic programming introduction resources that can help you dig into these topics further, and I encourage you to learn from them in addition to this chapter.
 
+第一章是你将要深入学习的知识的一个快速预览以及迈向编程大门的实践。当然还有许多其他有意思的编程介绍资源可以帮助你更深入地挖掘该主题，我鼓励你在本章的基础上额外地去学习它们。
+
 Once you feel comfortable with general programming basics, Chapter 2 will help guide you to a familiarity with JavaScript's flavor of programming. Chapter 2 introduces what JavaScript is about, but again, it's not a comprehensive guide -- that's what the rest of the *YDKJS* books are for!
+
+一旦你熟悉了编程基础，第二章将会指导你熟悉JavaScript的编程特点。第二章介绍了JavaScript是什么，但是再一次提醒你，第二章不是完全指导手册--完全的说明是 *YDKJS* 系列丛书剩余书籍的事情！
 
 If you're already fairly comfortable with JavaScript, first check out Chapter 3 as a brief glimpse of what to expect from *YDKJS*, then jump right in!
 
+如果你早就对JavaScript很熟悉，那么请首先简单检查一下第三章，第三章说明了 *YDKJS* 要研究的东西，然后开始学习！
+
 ## Code
+
+## 代码
 
 Let's start from the beginning.
 
+让我们从头开始。
+
 A program, often referred to as *source code* or just *code*, is a set of special instructions to tell the computer what tasks to perform. Usually code is saved in a text file, although with JavaScript you can also type code directly into a developer console in a browser, which we'll cover shortly.
+
+一个程序，通常指的是 *源码* 或仅仅是 *代码* ，是一组告诉计算机去执行什么任务的指令的集合。通常代码保存在文本文件中，虽然你可以直接在浏览器的开发者控制台(develop console)中写代码，这将在后面马上介绍到。
 
 The rules for valid format and combinations of instructions is called a *computer language*, sometimes referred to as its *syntax*, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.
 
