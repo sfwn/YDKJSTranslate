@@ -1,5 +1,5 @@
 # You Don't Know JS: Up & Going
-# 第一章: 进入编程
+# 第一章: Into Programming
 
 欢迎来到 *You Dont't Know JS* (*YDKJS*) 系列。
 
