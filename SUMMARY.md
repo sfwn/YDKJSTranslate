@@ -9,6 +9,12 @@
  * [第三章: Into YDKJS](up & going/ch3.md)
  * [附录 A: Thank You's!](up & going/apA.md)
 
+* [Scope & Closures](scope & closures/README.md)
+
 * [this & Object Prototypes](this & object prototypes/README.md)
 
- * 玩玩
+* [Types & Grammar](types & grammar/README.md)
+
+* [Async & Performance](async & performance/README.md)
+
+* [ES6 & Beyond](es6 & beyond\README.md)
