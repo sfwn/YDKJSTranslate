@@ -4,15 +4,15 @@
 
 -----
 
-**[Purchase digital/print copy from O'Reilly](http://shop.oreilly.com/product/0636920039303.do)**
+**[购买 数字/印刷 版本 O'Reilly出版社](http://shop.oreilly.com/product/0636920039303.do)**
 
 -----
 
-[Table of Contents](toc.md)
+[目录](toc.md)
 
-* [Foreword](foreword.md) (by [Jenn Lukas](http://jennlukas.com))
-* [Preface](../preface.md)
-* [Chapter 1: Into Programming](ch1.md)
-* [Chapter 2: Into JavaScript](ch2.md)
-* [Chapter 3: Into YDKJS](ch3.md)
-* [Appendix A: Thank You's!](apA.md)
+* [序言](foreword.md) (by [Jenn Lukas](http://jennlukas.com))
+* [前言](../preface.md)
+* [第一章: Into Programming](ch1.md)
+* [第二章: Into JavaScript](ch2.md)
+* [第三章: Into YDKJS](ch3.md)
+* [附录 A: Thank You's!](apA.md)
