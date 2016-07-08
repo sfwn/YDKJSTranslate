@@ -8,7 +8,7 @@
 
 -----
 
-[目录](ch1.md)
+[目录](toc.md)
 
 * [序言](foreword.md) (by [Jenn Lukas](http://jennlukas.com))
 * [前言](../preface.md)
