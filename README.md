@@ -9,9 +9,9 @@
 <a href="http://shop.oreilly.com/product/0636920033752.do"><img src="async %26 performance/cover.jpg" width="75"></a>&nbsp;
 <a href="http://shop.oreilly.com/product/0636920033769.do"><img src="es6 %26 beyond/cover.jpg" width="75"></a>
 
-Please feel free to contribute to the quality of this content by submitting PR's for improvements to code snippets, explanations, etc. While typo fixes are welcomed, they will likely be caught through normal editing processes, and are thus not necessarily as important for this repository.
+为了提升本文的质量，你可以自由轻松的通过提交 pull request 来改进代码片段、解释等。虽然我们同样欢迎修复排印错误(排印错误通常会在编辑过程中被捕获到)，但是在该仓库中它们并不是那么必需。
 
-**To read more about the motivations and perspective behind this book series, check out the [Preface](preface.md).**
+**若想更加详细地了解该系列丛书背后的动机和观点，请看[Preface](preface.md).**[Preface](preface.md).**
 
 ## 书名
 
