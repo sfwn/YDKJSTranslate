@@ -11,11 +11,10 @@
 
 我一直相信用合适的方式教课，这就意味着教他们 web 的标准、语义标记、注释良好的代码和最佳实践。我上课时用透彻的方式来解释怎么做和为什么，而不是仅仅是扔出代码让学生去复制粘贴。当你努力去理解你的代码，你创造了更棒的工作并且把你现在在做的做的更好。代码不再仅仅是你的*工作*，它是你的*艺术品*。这是我喜欢 *Up & Going* 的原因。Kyle 通过完整的没有一点点删减的介绍 JavaScript 的语法和术语带我们深入学习 JavaScript。这本书不是只停留在表面，而是让我们真正的去理解编程的概念。
 
-Because it’s not enough to be able to duplicate jQuery snippets into your website, the same way it’s not enough to learn how to open, close, and save a document in Photoshop. Sure, once I learn a few basics about the program I could create and share a design I made. But without legitimately knowing the tools and what is behind them, how can I define a grid, or craft a legible type system, or optimize graphics for web use. The same goes for JavaScript. Without knowing how loops work, or how to define variables, or what scope is, we won’t be writing the best code we can. We don’t want to settle for anything less -- this is, after all, our craft.
-仅仅能够复制 jQuery 代码片段到你的网站中是不够的，同样地，只学习如何在 Photoshop 中打开、关闭和保存文件也是不够的。当然，一旦我学习了一些编程的基础，我可以创造和分享我写的代码。但是如果没有理解工具和它们背后的原理，我如何去定义一个网格，
+仅仅能够复制 jQuery 代码片段到你的网站中是不够的，同样地，只学习如何在 Photoshop 中打开、关闭和保存文件也是不够的。当然，一旦我学习了一些编程的基础，我可以创造和分享我写的代码。但是如果没有理解工具和它们背后的原理，我如何去定义一个网格，或者创造一个清晰的系统类型，又或者是优化 web 图形界面。JavaScript 也是如此。如果不知道循环是怎么工作的，不知道如何去定义变量，不知道范围(scope)是什么，我们不可能写出最好的代码。我们不想什么都落下一点 -- 因为，毕竟，这是我们的艺术品。
 
-The more you are exposed to JavaScript, the clearer it becomes. Words like closures, objects, and methods might seem out of reach to you now, but this book will help those terms come into clarity. I want you to keep those two feelings of before and after you learn something in mind as you begin this book. It might seem daunting, but you’ve picked up this book because you are starting an awesome journey to hone your knowledge. *Up & Going* is the start of our path to understanding programming. Enjoy the lightbulb moments!
+你对 JavaScript 探索得越多，它就变得越发清晰。术语，比如闭包、对象和方法等，你现在看起来也许了解它们，但是这本书将会帮助你清楚地明白这些术语。我希望你能记住学习事物之前和之后的两种感觉，就好像开始学习这本书的时候。这看起来似乎有些畏惧，但是你已经选择拿起这本书，因为你已经开始了一段绚丽的旅程去完善你的知识。 *Up & Going* 是我们理解编程的道路上的开始。享受这闪光的时刻吧！
 
 Jenn Lukas<br>
 [jennlukas.com](http://jennlukas.com/), [@jennlukas](https://twitter.com/jennlukas)<br>
-Front-end consultant
+前端顾问
