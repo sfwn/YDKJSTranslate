@@ -1,9 +1,9 @@
 # You Don't Know JS: Up & Going
-# Foreword
+# 序言
 
-What was the last new thing you learned?
+你最近学习的是什么？
 
-Perhaps it was a foreign language, like Italian or German. Or maybe it was a graphics editor, like Photoshop. Or a cooking technique or woodworking or an exercise routine. I want you to remember that feeling when you finally got it: the lightbulb moment. When things went from blurry to crystal clear, as you mastered the table saw or understood the difference between masculine and feminine nouns in French. How did it feel? Pretty amazing, right?
+也许是一门外语，比如意大利语或者德语；又或者是图形编辑器，比如 Photoshop ；又或许是一项新的厨艺、木工技能和日常训练。我想你记住最终学会它们时的感觉: 一瞬的心花怒放。当事情从模糊不清的混沌到像水晶一般清晰，正如你掌握了台锯(table saw)或者明白了法语中男性和女性两个单词的区别。感觉如何？特别惊喜，是吗？
 
 Now I want you to travel back a little bit further in your memory to right before you learned your new skill. How did *that* feel? Probably slightly intimidating and maybe a little bit frustrating, right? At one point, we all did not know the things that we know now and that’s totally OK; we all start somewhere. Learning new material is an exciting adventure, especially if you are looking to learn the subject efficiently.
 
