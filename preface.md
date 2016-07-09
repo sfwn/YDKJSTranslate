@@ -1,5 +1,5 @@
 # You Don't Know JS
-# Preface
+# 序言
 
 I'm sure you noticed, but "JS" in the book series title is not an abbreviation for words used to curse about JavaScript, though cursing at the language's quirks is something we can probably all identify with!
 
