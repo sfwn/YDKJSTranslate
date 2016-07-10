@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [简介](README.md)
 * [Up & Going](up & going/README.md)
    * [序言](up & going/foreword.md)
    * [前言](preface.md)
