@@ -7,16 +7,15 @@
 
 但是作为一门语言，永远会有许多批判，一部分是因为语言的传统，但是更多的是因为它的设计哲学。甚至在起名上，正如 *Rrendan Eich* 曾经提出的一样，JavaScript 是其更成熟老练的兄弟"Java"的"哑巴弟弟"。但是这个名字只不过是明智的市场导向下的一次事故。这两门语言在许多重要的方面完全不同。"JavaScript"和"Java"的关系就好像"狂欢节"和"汽车"的关系。
 
-Because JavaScript borrows concepts and syntax idioms from several languages, including proud C-style procedural roots as well as subtle, less obvious Scheme/Lisp-style functional roots, it is exceedingly approachable to a broad audience of developers, even those with just little to no programming experience. The "Hello World" of JavaScript is so simple that the language is inviting and easy to get comfortable with in early exposure.
-因为 JavaScript 从其他几个语言带来一些概念和语法风格，包括
+因为 JavaScript 从其他几种语言中借鉴了一些概念和语法风格，包括 *proud C-style procedural roots* 以及 微妙的、很不明显的 *Scheme/Lisp-style functional roots*, 这对广大开发者是很亲切熟悉的，甚至是那些几乎没有编程经验的开发者。JavaScript 的"Hello world"是如此简单以至于这门语言的入门很舒服、简单和激动人心。
 
-While JavaScript is perhaps one of the easiest languages to get up and running with, its eccentricities make solid mastery of the language a vastly less common occurrence than in many other languages. Where it takes a pretty in-depth knowledge of a language like C or C++ to write a full-scale program, full-scale production JavaScript can, and often does, barely scratch the surface of what the language can do.
+虽然 JavaScript 大概是最容易上手和运行的语言之一，其语言怪癖使得真正完全掌握这门语言相比其他很多语言来说是极少的。使用 C 或 C++ 开发大规模程序需要对语言有相当深入的了解，JavaScript 也可以而且经常被用来开发大规模产品，这只是 JavaScript 可以做的一些皮毛而已。
 
-Sophisticated concepts which are deeply rooted into the language tend instead to surface themselves in *seemingly* simplistic ways, such as passing around functions as callbacks, which encourages the JavaScript developer to just use the language as-is and not worry too much about what's going on under the hood.
+复杂的概念根深蒂固到语言根源而不是表面，这些概念本身 *看似* 简单，如传递函数作为回调函数，它鼓励 JavaScript 开发人员只是按原样使用语言，而不是过于担心底层发生了什么。
 
-It is simultaneously a simple, easy-to-use language that has broad appeal, and a complex and nuanced collection of language mechanics which without careful study will elude *true understanding* even for the most seasoned of JavaScript developers.
+它同时是一个简单、易于使用的语言，具有广泛的吸引力。一些复杂而微妙的语言机制如果没有仔细研究的话，就连经验最丰富的 JavaScript 开发人员也无法真正明白。
 
-Therein lies the paradox of JavaScript, the Achilles' Heel of the language, the challenge we are presently addressing. Because JavaScript *can* be used without understanding, the understanding of the language is often never attained.
+JavaScript 有一个致命的弱点，这是一个目前需要解决的挑战。因为 JavaScript *可以* 不用理解就使用，所以经常有人完全不去弄懂 JavaScript。
 
 ## Mission
 
