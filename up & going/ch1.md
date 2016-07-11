@@ -28,21 +28,37 @@ a = b * 2;
 
 The characters `a` and `b` are called *variables* (see "Variables"), which are like simple boxes you can store any of your stuff in. In programs, variables hold values (like the number `42`) to be used by the program. Think of them as symbolic placeholders for the values themselves.
 
+字符 `a` 和 变量`b` 被称为 *变量* (见"变量")，它们就像简单的箱子可以在里面存放你的东西。在程序中，变量存放被程序使用的值(比如 数字`42`)。可以认为它们就是**值**的**符号占位符**。
+
 By contrast, the `2` is just a value itself, called a *literal value*, because it stands alone without being stored in a variable.
+
+与此形成对比的是，`2`仅仅是指**值**本身，被称为 *字面值* ，因为`2`是单独的没有被存放在一个变量中。
 
 The `=` and `*` characters are *operators* (see "Operators") -- they perform actions with the values and variables such as assignment and mathematic multiplication.
 
+`=`和`*`字符是 *操作符* (见"操作符") -- 它们对值和变量执行操作，比如赋值和算术乘法。
+
 Most statements in JavaScript conclude with a semicolon (`;`) at the end.
+
+在 JavaScript 中大多数声明由分号(`;`)结尾。
 
 The statement `a = b * 2;` tells the computer, roughly, to get the current value stored in the variable `b`, multiply that value by `2`, then store the result back into another variable we call `a`.
 
+声明 `a = b * 2` 大概告诉计算机去取变量`b`的当前值，乘以数值`2`，然后将结果存于另外一个变量，我们称之为 `a`。
+
 Programs are just collections of many such statements, which together describe all the steps that it takes to perform your program's purpose.
 
-### Expressions
+程序就是许多这种声明的集合，这些集合一起描述了程序如何一步步实现你的目标想法。
+
+### 表达式
 
 Statements are made up of one or more *expressions*. An expression is any reference to a variable or value, or a set of variable(s) and value(s) combined with operators.
 
+声明由一个或多个 *表达式* 组成。一个表达式就是任意一个变量或值的引用，或者是一组用操作符连接起来的变量(一个或多个)和值(一个或多个)。
+
 For example:
+
+例如: 
 
 ```js
 a = b * 2;
@@ -50,10 +66,16 @@ a = b * 2;
 
 This statement has four expressions in it:
 
+这个声明包含了4个表达式:
+
 * `2` is a *literal value expression*
+* `2` 是 *字面值表达式*
 * `b` is a *variable expression*, which means to retrieve its current value
+* `b` 是 *变量表达式* ，表示的是取得它的当前值
 * `b * 2` is an *arithmetic expression*, which means to do the multiplication
+* `b * 2` 是 *算术表达式* ，表示的是乘法
 * `a = b * 2` is an *assignment expression*, which means to assign the result of the `b * 2` expression to the variable `a` (more on assignments later)
+* `a = b * 2` 是 *赋值表达式* ，表示的是将 `b * 2` 表达式的结果赋值给变量 `a` (后面会详细介绍赋值)
 
 A general expression that stands alone is also called an *expression statement*, such as the following:
 
