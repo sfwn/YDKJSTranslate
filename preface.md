@@ -25,16 +25,16 @@ JavaScript 有一个致命的弱点，这是一个目前需要解决的挑战。
 
 *You Don't Know JavaScript* 这一些系列书提出了一个相反的挑战: 学习并且深入理解 JavaSript 的 *所有* ，特别是"艰难的部分"。
 
-Here, we address head on the tendency of JS developers to learn "just enough" to get by, without ever forcing themselves to learn exactly how and why the language behaves the way it does. Furthermore, we eschew the common advice to *retreat* when the road gets rough.
+在此，我们重点解决一个 JS 开发者的趋势上，也就是学得"刚好够用"过得去，没有强迫他们自己去明确地研究语言如何表现以及为何如此表现。更多的是，我们没有像通常的建议那样当学习变得艰难时就逃避。
 
-I am not content, nor should you be, at stopping once something *just works*, and not really knowing *why*. I gently challenge you to journey down that bumpy "road less traveled" and embrace all that JavaScript is and can do. With that knowledge, no technique, no framework, no popular buzzword acronym of the week, will be beyond your understanding.
+我从来不会当一件事 *只能运行* 而没有真正了解其运行原理就感到满意并停止，你也是。我友善地挑战你去享受崎岖不平的道路而不是旅行，并且拥抱 JavaScript 以及它可以做的事情。知识，没有技术，没有框架，没有本周的流行话题，将超乎你的理解。
 
-These books each take on specific core parts of the language which are most commonly misunderstood or under-understood, and dive very deep and exhaustively into them. You should come away from reading with a firm confidence in your understanding, not just of the theoretical, but the practical "what you need to know" bits.
+这些书每一本都包含了一个最普遍被错误理解的或者是没有理解的主题，并且非常深入且不顾一切的去研究它们。你应该在阅读并理解"你需要知道"部分之后充满强烈的信心，不仅仅在理论上，而且在实践上。
 
-The JavaScript you know *right now* is probably *parts* handed down to you by others who've been burned by incomplete understanding. *That* JavaScript is but a shadow of the true language. You don't *really* know JavaScript, *yet*, but if you dig into this series, you *will*. Read on, my friends. JavaScript awaits you.
+你 *现在* 之后的 JavaScript 可能是别人在不完整理解上传递给你的。*那* 确实是 JavaScript 但是只是完整语言的一部分。你并不是 *真正* 理解 JavaScript，目前来说是这样，但是在读完这一系列书之后你 *将* 会真正了解。开始阅读吧，我的朋友。JavaScript 在等你。
 
-## Summary
+## 总结
 
-JavaScript is awesome. It's easy to learn partially, and much harder to learn completely (or even *sufficiently*). When developers encounter confusion, they usually blame the language instead of their lack of understanding. These books aim to fix that, inspiring a strong appreciation for the language you can now, and *should*, deeply *know*.
+JavaScript 很炫。它很容易学习一部分，但是很难完整的学习 *甚至仅仅是大部分* 。当开发者遇到问题时，他们经常责怪语言而不是去想他们自己对语言的不了解。这一系列书的目的是改变这一看法，增加你对语言的强烈欣赏，并且 *应该* 深入 *理解* 。
 
-Note: Many of the examples in this book assume modern (and future-reaching) JavaScript engine environments, such as ES6. Some code may not work as described if run in older (pre-ES6) engines.
+注意: 本书的绝大部分例子假定你采用的是现代的(和未来会实现的) JavaScript 引擎，比如 ES6.一些代码或许不能在老的引擎(早于ES6)中运行。
