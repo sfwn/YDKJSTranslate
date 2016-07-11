@@ -17,13 +17,13 @@
 
 JavaScript 有一个致命的弱点，这是一个目前需要解决的挑战。因为 JavaScript *可以* 不用理解就使用，所以经常有人完全不去弄懂 JavaScript。
 
-## Mission
+## 使命 Mission
 
-If at every point that you encounter a surprise or frustration in JavaScript, your response is to add it to the blacklist, as some are accustomed to doing, you soon will be relegated to a hollow shell of the richness of JavaScript.
+如果每一次你在 JavaScript 中遇到意外或挫折，你的反应是将它列入你的黑名单，正如一些人习惯去这么做一样，那么你将很快降级为只知道丰富的 JavaScript 的一个空壳。
 
-While this subset has been famously dubbed "The Good Parts", I would implore you, dear reader, to instead consider it the "The Easy Parts", "The Safe Parts", or even "The Incomplete Parts".
+虽然这本书已经被称为注明的"好的部分"，我恳请你，亲爱的读者，不要将其认为是"简单的部分"、"安全的部分"，甚至是"未完成的部分"。
 
-This *You Don't Know JavaScript* book series offers a contrary challenge: learn and deeply understand *all* of JavaScript, even and especially "The Tough Parts".
+*You Don't Know JavaScript* 这一些系列书提出了一个相反的挑战: 学习并且深入理解 JavaSript 的 *所有* ，特别是"艰难的部分"。
 
 Here, we address head on the tendency of JS developers to learn "just enough" to get by, without ever forcing themselves to learn exactly how and why the language behaves the way it does. Furthermore, we eschew the common advice to *retreat* when the road gets rough.
 
