@@ -266,6 +266,8 @@ The `=` equals operator is used for *assignment* -- we first calculate the value
 
 Consider:
 
+思考:
+
 ```js
 a = 2;
 b = a + 1;
@@ -273,9 +275,15 @@ b = a + 1;
 
 Here, we assign the `2` value to the `a` variable. Then, we get the value of the `a` variable (still `2`), add `1` to it resulting in the value `3`, then store that value in the `b` variable.
 
+在这里，我们将 值 `2` 赋给 变量 `a` 。然后，我们用 变量 `a` 的值(仍然是 `2`)加上 `1` 返回结果为 值 `3` ，再把这个值 `3` 存储到 变量 `b` 中。
+
 While not technically an operator, you'll need the keyword `var` in every program, as it's the primary way you *declare* (aka *create*) *var*iables (see "Variables").
 
+从严格意义上来说这不是一个操作符，但是你将会需要关键字 `var` 在每一个程序中，因为它是 *声明 declare* (也称为 *创造 creat*) 变量(*var*iables) (见 "变量 Variables")。
+
 You should always declare the variable by name before you use it. But you only need to declare a variable once for each *scope* (see "Scope"); it can be used as many times after that as needed. For example:
+
+你应该总是在你使用变量之前先用名字来声明一个变量。但是你仅仅需要在一个 *范围 scope* 内定义这个变量一次(见 "范围 scope")；变量将在声明之后可以根据需要想使用就多少次就使用多少次。例如:
 
 ```js
 var a = 20;
@@ -288,10 +296,15 @@ console.log( a );	// 42
 
 Here are some of the most common operators in JavaScript:
 
+这里是一些在 JavaScript 中常用的操作符:
+
 * Assignment: `=` as in `a = 2`.
+* 赋值: 正如 `=` 在 `a =2 ` 中。
 * Math: `+` (addition), `-` (subtraction), `*` (multiplication), and `/` (division), as in `a * 3`.
+* 数学: `+` (加 addition)， `-` (减 subtraction)， `*` (乘 multiplication) 和 `/` (除 division)，正如在 `a * 3` 中。
 * Compound Assignment: `+=`, `-=`, `*=`, and `/=` are compound operators that combine a math operation with assignment, as in `a += 2` (same as `a = a + 2`).
 * Increment/Decrement: `++` (increment), `--` (decrement), as in `a++` (similar to `a = a + 1`).
+* // TODO
 * Object Property Access: `.` as in `console.log()`.
 
    Objects are values that hold other values at specific named locations called properties. `obj.a` means an object value called `obj` with a property of the name `a`. Properties can alternatively be accessed as `obj["a"]`. See Chapter 2.
