@@ -106,6 +106,8 @@ How do those collections of programming statements tell the computer what to do?
 
 Statements like `a = b * 2` are helpful for developers when reading and writing, but are not actually in a form the computer can directly understand. So a special utility on the computer (either an *interpreter* or a *compiler*) is used to translate the code you write into commands a computer can understand.
 
+譬如 `a = b * 2` 这样的声明对于开发者阅读和编写代码是很有帮助的，但是这不是计算机可以直接理解的格式。所以计算机上有专门的工具(*解释器* 或 *编译器*)用来将你写的代码翻译成计算机可以理解的命令。
+
 For some computer languages, this translation of commands is typically done from top to bottom, line by line, every time the program is run, which is usually called *interpreting* the code.
 
 For other languages, the translation is done ahead of time, called *compiling* the code, so when the program *runs* later, what's running is actually the already compiled computer instructions ready to go.
