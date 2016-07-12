@@ -114,21 +114,41 @@ For some computer languages, this translation of commands is typically done from
 
 For other languages, the translation is done ahead of time, called *compiling* the code, so when the program *runs* later, what's running is actually the already compiled computer instructions ready to go.
 
+对于另外一些语言，代码的翻译工作是提前做好的，这样的模式被称为 *编译(compiling)* ，所以当程序稍后 *运行* 时，真正运行的实际上是已经编译好的计算机指令。
+
 It's typically asserted that JavaScript is *interpreted*, because your JavaScript source code is processed each time it's run. But that's not entirely accurate. The JavaScript engine actually *compiles* the program on the fly and then immediately runs the compiled code.
+
+通常来说， JavaScript 被认作是 *解释(interpreted)* 型语言，因为每次运行时你的 JavaScript 源代码会被解释处理。但这并无完全准确。JavaScript 引擎实际上飞速地 *编译* 程序然后立即执行编译好的代码。
 
 **Note:** For more information on JavaScript compiling, see the first two chapters of the *Scope & Closures* title of this series.
 
+**笔记:** 想要了解更多有关 JavaScript 编译的资料，参考本系列的第二章 *Scope & Closures* 。
+
 ## Try It Yourself
+## 亲自尝试
 
 This chapter is going to introduce each programming concept with simple snippets of code, all written in JavaScript (obviously!).
 
+这一章节准备通过简单的代码片段来介绍每一个编程概念，所有的代码片段当然都由 JavaScript 来编写。
+
 It cannot be emphasized enough: while you go through this chapter -- and you may need to spend the time to go over it several times -- you should practice each of these concepts by typing the code yourself. The easiest way to do that is to open up the developer tools console in your nearest browser (Firefox, Chrome, IE, etc.).
+
+下面内容着重强调: 当你阅读这一章节时 -- 你也许需要花一些时间去阅读好几遍 -- 你应该亲自敲下这些代码来练习这里面的每一个概念。最简单的方法就是打开你最近使用的浏览器(Firefox, Chrome, IE 等等)的开发者工具控制台(developer tools console)。
 
 **Tip:** Typically, you can launch the developer console with a keyboard shortcut or from a menu item. For more detailed information about launching and using the console in your favorite browser, see "Mastering The Developer Tools Console" (http://blog.teamtreehouse.com/mastering-developer-tools-console). To type multiple lines into the console at once, use `<shift> + <enter>` to move to the next new line. Once you hit `<enter>` by itself, the console will run everything you've just typed.
 
+**提示** 通常来说，你可以通过键盘快捷键或者从菜单选项中打开你的开发者工具控制台。获取更多有关打开和使用你最喜欢的浏览器的控制台的细节，请参考"掌控开发者工具控制台(Mastering The Developer Tools Console)"  
+(http://blog.teamtreehouse.com/mastering-developer-tools-console)
+在控制台中一次输入多行，使用 `<shift> + <enter>` 来移动到下一行。一旦你敲下 `<enter>` ，控制台将会运行所有你敲下的代码。
+
 Let's get familiar with the process of running code in the console. First, I suggest opening up an empty tab in your browser. I prefer to do this by typing `about:blank` into the address bar. Then, make sure your developer console is open, as we just mentioned.
 
+让我们来熟悉在控制台中运行代码的过程。  
+首先，我建议你在浏览器中打开一个空标签页。我推荐你在地址栏输入 `about:blank` 。然后，确保你的开发者控制台已经打开，正如我们刚才(上面)提到的那样。
+
 Now, type this code and see how it runs:
+
+现在，敲下代码然后观察它是如何运行的:
 
 ```js
 a = 21;
@@ -140,17 +160,28 @@ console.log( b );
 
 Typing the preceding code into the console in Chrome should produce something like the following:
 
+在 Chrome 中敲下上面的代码应该会得到类似下面的结果:
+
 <img src="fig1.png" width="500">
 
 Go on, try it. The best way to learn programming is to start coding!
 
+继续尝试。学习编程最好的方法就是开始敲代码!
+
 ### Output
+### 输出
 
 In the previous code snippet, we used `console.log(..)`. Briefly, let's look at what that line of code is all about.
 
+在前面的代码片段中，我们使用了 `console.log(..)` 。下面让我们简单地来看看这几行代码都说了些什么。
+
 You may have guessed, but that's exactly how we print text (aka *output* to the user) in the developer console. There are two characteristics of that statement that we should explain.
 
+你可能已经猜到了，这正是我们在开发者控制台中打印文本的方法(也称为 *输出到用户(output)*)。在这个声明中有两个特点需要我们解释。
+
 First, the `log( b )` part is referred to as a function call (see "Functions"). What's happening is we're handing the `b` variable to that function, which asks it to take the value of `b` and print it to the console.
+
+// TODO
 
 Second, the `console.` part is an object reference where the `log(..)` function is located. We cover objects and their properties in more detail in Chapter 2.
 
