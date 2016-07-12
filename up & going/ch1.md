@@ -79,21 +79,30 @@ This statement has four expressions in it:
 
 A general expression that stands alone is also called an *expression statement*, such as the following:
 
+一个单独存在的普通表达式也称为 *表达式声明* ，如下所示:
+
 ```js
 b * 2;
 ```
 
 This flavor of expression statement is not very common or useful, as generally it wouldn't have any effect on the running of the program -- it would retrieve the value of `b` and multiply it by `2`, but then wouldn't do anything with that result.
 
+这种风格的表达式声明不是非常常见和有用，因为通常它对正在运行的程序不会有任何影响 -- 它会从 `b` 中获取值然后乘以 `2`，但是对结果却什么也没做。
+
 A more common expression statement is a *call expression* statement (see "Functions"), as the entire statement is the function call expression itself:
+
+另外一种常见的表达式声明是 *调用表达式(call expression)* 声明(见"函数")，因为整个声明本身就是一个函数调用表达式:
 
 ```js
 alert( a );
 ```
 
 ### Executing a Program
+### 运行一个程序
 
 How do those collections of programming statements tell the computer what to do? The program needs to be *executed*, also referred to as *running the program*.
+
+这些程序声明的集合是怎么样告诉电脑去做什么的？程序需要被 *执行* ，也就是 *运行程序* 。
 
 Statements like `a = b * 2` are helpful for developers when reading and writing, but are not actually in a form the computer can directly understand. So a special utility on the computer (either an *interpreter* or a *compiler*) is used to translate the code you write into commands a computer can understand.
 
