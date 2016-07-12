@@ -181,11 +181,16 @@ You may have guessed, but that's exactly how we print text (aka *output* to the 
 
 First, the `log( b )` part is referred to as a function call (see "Functions"). What's happening is we're handing the `b` variable to that function, which asks it to take the value of `b` and print it to the console.
 
-// TODO
+首先，`log( b )`部分作为一个函数调用(见 "函数")。我们将变量`b`交给函数，函数拿到`b`的值并且打印到控制台，这就是发生的事情。
 
 Second, the `console.` part is an object reference where the `log(..)` function is located. We cover objects and their properties in more detail in Chapter 2.
 
+第二，`console.`部分是一个对象引用，后面跟着`log(..)`函数。在第二章(Chapter 2)我们将会对 **对象** 和 **对象的属性** 有更加细节的描述。
+
 Another way of creating output that you can see is to run an `alert(..)` statement. For example:
+
+另外一个创造输出的方法正如你所见就是运行 `alert(..)` 声明。  
+例如:
 
 ```js
 alert( b );
@@ -193,13 +198,22 @@ alert( b );
 
 If you run that, you'll notice that instead of printing the output to the console, it shows a popup "OK" box with the contents of the `b` variable. However, using `console.log(..)` is generally going to make learning about coding and running your programs in the console easier than using `alert(..)`, because you can output many values at once without interrupting the browser interface.
 
+如果你运行它，你将会注意到它显示了一个"OK"弹出框并且弹出框的内容是变量 `b` 而不是打印输出到控制台。然而，使用 `console.log(..)` 是一个让你学习在控制台中写代码和运行程序更简单的方式，而不是使用 `alert(..)` ，因为你可以一次性输出很多值而不用中断浏览器界面。
+
 For this book, we'll use `console.log(..)` for output.
 
+在本书中，我们将会使用 `conosole.log(..)` 来输出。
+
 ### Input
+### 输入
 
 While we're discussing output, you may also wonder about *input* (i.e., receiving information from the user).
 
+当我们讨论输出的时候，你也许也想知道 *输入* (例如，从用户那里收到消息)。
+
 The most common way that happens is for the HTML page to show form elements (like text boxes) to a user that they can type into, and then using JS to read those values into your program's variables.
+
+最常见的场景就是一个 HTML 页面显示表单元素(比如文本复选框 text boxes)，用户可以键入内容，然后使用 JS 来读取值到你的程序变量中。
 
 But there's an easier way to get input for simple learning and demonstration purposes such as what you'll be doing throughout this book. Use the `prompt(..)` function:
 
