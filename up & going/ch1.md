@@ -217,6 +217,8 @@ The most common way that happens is for the HTML page to show form elements (lik
 
 But there's an easier way to get input for simple learning and demonstration purposes such as what you'll be doing throughout this book. Use the `prompt(..)` function:
 
+但是这里有一个更简单的方法用于简单的学习以及示范的目的正如在这本书中使用的一样。使用 `prompt(..)` 函数:
+
 ```js
 age = prompt( "Please tell me your age:" );
 
@@ -225,25 +227,42 @@ console.log( age );
 
 As you may have guessed, the message you pass to `prompt(..)` -- in this case, `"Please tell me your age:"` -- is printed into the popup.
 
+正如你可能已经猜到的一样，你传递给 `prompt(..)` 函数的消息 -- 在本例中，是 `"Please tell me your age"` -- 将会被弹出显示。
+
 This should look similar to the following:
+
+这应该和下面的类似:
 
 <img src="fig2.png" width="500">
 
 Once you submit the input text by clicking "OK," you'll observe that the value you typed is stored in the `age` variable, which we then *output* with `console.log(..)`:
 
+一旦你通过点击"OK"提交了输入的文本，你将会发现你输入的值被存储在 `age` 变量中，我们用 `console.log(..)` *输出 output* 该变量:  
+
 <img src="fig3.png" width="500">
 
 To keep things simple while we're learning basic programming concepts, the examples in this book will not require input. But now that you've seen how to use `prompt(..)`, if you want to challenge yourself you can try to use input in your explorations of the examples.
 
+为了使学习基本编程概念变得更加轻松，本书的示例将不会要求有输入。但是现在你已经见到如何使用 `prompt(..)` ，如果你想挑战你自己，你可以尝试着在你的示例探索中使用输入。
+
 ## Operators
+## 操作符
 
 Operators are how we perform actions on variables and values. We've already seen two JavaScript operators, the `=` and the `*`.
 
+操作符用来定义变量和值如何执行动作。我们已经见过两个 JavaScript 操作符，分别是 `=` 和 `*`。
+
 The `*` operator performs mathematic multiplication. Simple enough, right?
+
+`*` 操作符用来执行算法乘法。简单至极，对吧？
 
 The `=` equals operator is used for *assignment* -- we first calculate the value on the *right-hand side* (source value) of the `=` and then put it into the variable that we specify on the *left-hand side* (target variable).
 
+`=` 相等操作符被用来 *赋值* -- 我们首先计算 `=` *右手边的 right-hand side* (源 *值*) 然后将其放到我们指定的 `=` *右手边的* 变量(目标 **变量**)里。
+
 **Warning:** This may seem like a strange reverse order to specify assignment. Instead of `a = 42`, some might prefer to flip the order so the source value is on the left and the target variable is on the right, like `42 -> a` (this is not valid JavaScript!). Unfortunately, the `a = 42` ordered form, and similar variations, is quite prevalent in modern programming languages. If it feels unnatural, just spend some time rehearsing that ordering in your mind to get accustomed to it.
+
+**警告:** 赋值的顺序看起来有点奇怪且相反。不仅仅是 `a = 42` ，有些甚至喜欢翻转顺序所以源值在左边，目标变量在右边，例如 `42 -> a` (这在 JavaScript 中不合法)。不幸的是，`a = 42` 这样的顺序格式，还有类似的一些变化形式，在现代编程语言中非常流行。如果这让你感觉不自然，多花时间在你的心里记住这样的顺序并且去习惯它。
 
 Consider:
 
