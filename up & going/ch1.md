@@ -303,12 +303,16 @@ Here are some of the most common operators in JavaScript:
 * Math: `+` (addition), `-` (subtraction), `*` (multiplication), and `/` (division), as in `a * 3`.
 * 数学: `+` (加 addition)， `-` (减 subtraction)， `*` (乘 multiplication) 和 `/` (除 division)，正如在 `a * 3` 中。
 * Compound Assignment: `+=`, `-=`, `*=`, and `/=` are compound operators that combine a math operation with assignment, as in `a += 2` (same as `a = a + 2`).
+* 组合赋值符: `+=`，`-=`，`*=` 和 `/=` 是组合赋值符，组合赋值符将数学运算和赋值组合在一起，例如 `a += 2` (就是 `a = a + 2`)。
 * Increment/Decrement: `++` (increment), `--` (decrement), as in `a++` (similar to `a = a + 1`).
-* // TODO
+* 自增/自减: `++` (自增), `--` (自减)，例如 `a++` (就是 `a = a+ 1`)。
 * Object Property Access: `.` as in `console.log()`.
+* 对象属性访问符: 正如 `console.log()` 中的 `.` 。
 
    Objects are values that hold other values at specific named locations called properties. `obj.a` means an object value called `obj` with a property of the name `a`. Properties can alternatively be accessed as `obj["a"]`. See Chapter 2.
+   对象由被称为属性的值组成。 `obj.a` 是说一个对象 `obj` 有一个属性 `a`。属性也可以通过 `obj[a]` 这种方式来访问。参考第二章。
 * Equality: `==` (loose-equals), `===` (strict-equals), `!=` (loose not-equals), `!==` (strict not-equals), as in `a == b`.
+* 相等: `==` (弱等)， `===` (强等)， `!=` (弱不等)，`!==` (强不等)，例如 `a == b`。
 
    See "Values & Types" and Chapter 2.
 * Comparison: `<` (less than), `>` (greater than), `<=` (less than or loose-equals), `>=` (greater than or loose-equals), as in `a <= b`.
