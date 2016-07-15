@@ -337,9 +337,15 @@ Here are some of the most common operators in JavaScript:
 
 If you ask an employee at a phone store how much a certain phone costs, and they say "ninety-nine, ninety-nine" (i.e., $99.99), they're giving you an actual numeric dollar figure that represents what you'll need to pay (plus taxes) to buy it. If you want to buy two of those phones, you can easily do the mental math to double that value to get $199.98 for your base cost.
 
+如果你去一家手机店询问店一款手机的价格，他们会告诉你是99.99美元，他们告诉你的是一个代表着你买这个手机需要支付的含税的具体美元数值。如果你想买两个这种手机，你可以在基础价格上通过简单的脑力计算将99美元乘以2得到198美元。
+
 If that same employee picks up another similar phone but says it's "free" (perhaps with air quotes), they're not giving you a number, but instead another kind of representation of your expected cost ($0.00) -- the word "free."
 
+如果这个电源拿起另一款手机但是说这款手机是"免费(free)"的(perhaps with air quotes)，他没有给你一个具体的数字，而是给了另一个类型来表示你的预期花费(0.00美元) -- 单词 "免费"。
+
 When you later ask if the phone includes a charger, that answer could only have been either "yes" or "no."
+
+
 
 In very similar ways, when you express values in a program, you choose different representations for those values based on what you plan to do with them.
 
