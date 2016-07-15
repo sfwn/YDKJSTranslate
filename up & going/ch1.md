@@ -312,19 +312,28 @@ Here are some of the most common operators in JavaScript:
    Objects are values that hold other values at specific named locations called properties. `obj.a` means an object value called `obj` with a property of the name `a`. Properties can alternatively be accessed as `obj["a"]`. See Chapter 2.
    对象由被称为属性的值组成。 `obj.a` 是说一个对象 `obj` 有一个属性 `a`。属性也可以通过 `obj[a]` 这种方式来访问。参考第二章。
 * Equality: `==` (loose-equals), `===` (strict-equals), `!=` (loose not-equals), `!==` (strict not-equals), as in `a == b`.
-* 相等: `==` (弱等)， `===` (强等)， `!=` (弱不等)，`!==` (强不等)，例如 `a == b`。
+* 相等: `==` (弱等)， `===` (强等)， `!=` (弱不等)，`!==` (强不等)，例如 `a == b` 。
 
    See "Values & Types" and Chapter 2.
+   参考第二章 "Values & Types"。
 * Comparison: `<` (less than), `>` (greater than), `<=` (less than or loose-equals), `>=` (greater than or loose-equals), as in `a <= b`.
+* 比较运算符: `<` (小于)，`>` (大于)，`<=` (小于或弱等于)，`>=` (大于或若等于)，例如 `a <= b` 。
 
    See "Values & Types" and Chapter 2.
+   参考 "Values & Types" 。
 * Logical: `&&` (and), `||` (or), as in `a || b` that selects either `a` *or* `b`.
+* 逻辑运算符: `&&` (和)， `||` (或)，正如 `a || b` ，要么选择 `a` 要么选择 `b` 。
 
    These operators are used to express compound conditionals (see "Conditionals"), like if either `a` *or* `b` is true.
+   
+   这些操作符在复合环境中被使用(参考 "条件")，正如判断 `a` 和 `b` 哪个是真的。
 
 **Note:** For much more detail, and coverage of operators not mentioned here, see the Mozilla Developer Network (MDN)'s "Expressions and Operators" (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators).
 
+**Note** 想要获取更多的细节，详细介绍上文还没提到过的操作符，参考 Mozilla Developer Network (MDN)'s "Expressions and Operators" (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators).
+
 ## Values & Types
+## 值 和 类型
 
 If you ask an employee at a phone store how much a certain phone costs, and they say "ninety-nine, ninety-nine" (i.e., $99.99), they're giving you an actual numeric dollar figure that represents what you'll need to pay (plus taxes) to buy it. If you want to buy two of those phones, you can easily do the mental math to double that value to get $199.98 for your base cost.
 
