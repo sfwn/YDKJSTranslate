@@ -345,14 +345,20 @@ If that same employee picks up another similar phone but says it's "free" (perha
 
 When you later ask if the phone includes a charger, that answer could only have been either "yes" or "no."
 
-
+当你稍后问说这款手机有没有配充电器，答案只能是"是"或者"否"。
 
 In very similar ways, when you express values in a program, you choose different representations for those values based on what you plan to do with them.
 
+类似的，当你在程序中表示一个值时，你根据值的用途来选择不同的类型来表示这些值。
+
 These different representations for values are called *types* in programming terminology. JavaScript has built-in types for each of these so called *primitive* values:
 
+这些值的不同表示在程序术语中被称为 *类型* 。JavaScript 有内建的类型称为 "原生(基本)" 类型:
+
 * When you need to do math, you want a `number`.
+* 当你需要做算术运算，你需要 `number` 。
 * When you need to print a value on the screen, you need a `string` (one or more characters, words, sentences).
+* 当你需要在
 * When you need to make a decision in your program, you need a `boolean` (`true` or `false`).
 
 Values that are included directly in the source code are called *literals*. `string` literals are surrounded by double quotes `"..."` or single quotes (`'...'`) -- the only difference is stylistic preference. `number` and `boolean` literals are just presented as is (i.e., `42`, `true`, etc.).
