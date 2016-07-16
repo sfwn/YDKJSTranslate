@@ -358,12 +358,17 @@ These different representations for values are called *types* in programming ter
 * When you need to do math, you want a `number`.
 * 当你需要做算术运算，你需要 `number` 。
 * When you need to print a value on the screen, you need a `string` (one or more characters, words, sentences).
-* 当你需要在
+* 当你需要在屏幕上打印值的时候，你需要 `string` (一个或多个字符、单词或句子)。
 * When you need to make a decision in your program, you need a `boolean` (`true` or `false`).
+* 当你需要在你的程序中做决定时，你需要一个 `boolean` (`true`或者`false`)。
 
 Values that are included directly in the source code are called *literals*. `string` literals are surrounded by double quotes `"..."` or single quotes (`'...'`) -- the only difference is stylistic preference. `number` and `boolean` literals are just presented as is (i.e., `42`, `true`, etc.).
 
+那些被直接写在原代码中的值被称为 *字面值(literals)* 。`string` 是用双引号 `"..."` 或 单引号 `'...'` 引起来的字面值 -- 它们唯一的区别只是风格不同。 `number` 和 `boolean` 字面值就是它们本身(例如，`43`，`true`等)。
+
 Consider:
+
+思考:
 
 ```js
 "I am a string";
@@ -376,6 +381,8 @@ false;
 ```
 
 Beyond `string`/`number`/`boolean` value types, it's common for programming languages to provide *arrays*, *objects*, *functions*, and more. We'll cover much more about values and types throughout this chapter and the next.
+
+上面的 `string` / `number` / `boolean` 值类型在编程语言那种常用来创建 *arrays*，*objects*，*functions*以及其他复杂类型。我们将会在本章接下来的内容中更多的介绍值和类型。
 
 ### Converting Between Types
 
