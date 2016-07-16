@@ -385,10 +385,15 @@ Beyond `string`/`number`/`boolean` value types, it's common for programming lang
 上面的 `string` / `number` / `boolean` 值类型在编程语言那种常用来创建 *arrays*，*objects*，*functions*以及其他复杂类型。我们将会在本章接下来的内容中更多的介绍值和类型。
 
 ### Converting Between Types
+### 类型转换
 
 If you have a `number` but need to print it on the screen, you need to convert the value to a `string`, and in JavaScript this conversion is called "coercion." Similarly, if someone enters a series of numeric characters into a form on an ecommerce page, that's a `string`, but if you need to then use that value to do math operations, you need to *coerce* it to a `number`.
 
+如果你有一个 `number` 但是想将它打印在屏幕上，你需要将这个值转换成 `string` 类型，在 JavaScript 中这样的转换被称为 "强制转换 coercion"。类似地，如果有人在电子商务页面输入了一组数字字符，它是 `string` 类型的，但是如果你需要使用它来做数学操作，你需要 *强制转换* 成 `number` 类型。
+
 JavaScript provides several different facilities for forcibly coercing between *types*. For example:
+
+JavaScript 提供了几个不同的方法来强制转换 *类型* 。例如:
 
 ```js
 var a = "42";
@@ -400,15 +405,27 @@ console.log( b );	// 42
 
 Using `Number(..)` (a built-in function) as shown is an *explicit* coercion from any other type to the `number` type. That should be pretty straightforward.
 
+使用上面所示的 `Number(..)` (一个内置的函数) 明确地从其他任何类型转换成 `number` 类型。这很直观而且直接。
+
 But a controversial topic is what happens when you try to compare two values that are not already of the same type, which would require *implicit* coercion.
+
+但是有争议的主题是，当你尝试去比较两个不是同一类型的值，这会导致 *隐式的 implicit* 强制类型转换，会发生什么呢?
 
 When comparing the string `"99.99"` to the number `99.99`, most people would agree they are equivalent. But they're not exactly the same, are they? It's the same value in two different representations, two different *types*. You could say they're "loosely equal," couldn't you?
 
+当比较 string `"99.99"` 和 number `99.99` 时，大部分人将会认为它们是相等的。但是实际上它们并不完全相等，不是吗？同一个值的两种不同的表示方法，两种不同的 *类型* 。你可以说它们是 "弱相等 loosely equal" ，不是吗？
+
 To help you out in these common situations, JavaScript will sometimes kick in and *implicitly* coerce values to the matching types.
+
+为了帮助你从这样模棱两可的情况中脱离出来，JavaScript 将会 *隐式的* 强制类型转换将值转换成匹配的类型。
 
 So if you use the `==` loose equals operator to make the comparison `"99.99" == 99.99`, JavaScript will convert the left-hand side `"99.99"` to its `number` equivalent `99.99`. The comparison then becomes `99.99 == 99.99`, which is of course `true`.
 
+所以当你使用 `==` 弱相等比较符来比较 `"99.99" == 99.99` ，JavaScript 将会将左边的值 `"99.99"` 转换成它相等的 `number` 类型 `99.99` 。比较编程了 `99.99 == 99.99` ，答案当然为 `true` 。
+
 While designed to help you, implicit coercion can create confusion if you haven't taken the time to learn the rules that govern its behavior. Most JS developers never have, so the common feeling is that implicit coercion is confusing and harms programs with unexpected bugs, and should thus be avoided. It's even sometimes called a flaw in the design of the language.
+
+虽然隐式转换的设计初衷是为了帮助你，但是隐式的强制类型转换会产生一些疑惑当你没有花时间去研究过转换的具体行为。大多数的 JS 开发者从来没有花过时间在这上面，所以给人通常的感受是隐式强制类型转换很混乱并且危害程序使程序有不可预知的bugs，所以应该避免隐式类型转换。有时隐式类型转换甚至被认为是语言设计的缺点。
 
 However, implicit coercion is a mechanism that *can be learned*, and moreover *should be learned* by anyone wishing to take JavaScript programming seriously. Not only is it not confusing once you learn the rules, it can actually make your programs better! The effort is well worth it.
 
