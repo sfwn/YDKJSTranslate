@@ -544,11 +544,19 @@ The easiest way to go about that in your program is to assign a value to a symbo
 
 In some programming languages, you declare a variable (container) to hold a specific type of value, such as `number` or `string`. *Static typing*, otherwise known as *type enforcement*, is typically cited as a benefit for program correctness by preventing unintended value conversions.
 
+在一些编程语言中，你声明一个变量(容器)来保存一个特殊类型的值，比如 `number` 或者 `string` 。*静态类型检查 Static typing* ，被熟知为 *类型强制转换* ，通常被编程语言引用作为优点通过阻止无意识的值转换来保证程序的正确性。
+
 Other languages emphasize types for values instead of variables. *Weak typing*, otherwise known as *dynamic typing*, allows a variable to hold any type of value at any time. It's typically cited as a benefit for program flexibility by allowing a single variable to represent a value no matter what type form that value may take at any given moment in the program's logic flow.
+
+另外一些语言强制值的类型而不是变量。 *弱类型检查* ，也被熟知为 *动态类型检查* ，允许一个变量在任何时候都保存任何值。这通常被视为程序复杂性的优点，通过允许单个变量来表示值，不管在程序的逻辑流中的任何时刻值的类型格式是什么。
 
 JavaScript uses the latter approach, *dynamic typing*, meaning variables can hold values of any *type* without any *type* enforcement.
 
+Javascript 使用后面的实现， *动态类型检查* ，意味着变量可以保存任何 *类型* 的值而不需要 *类型* 强制转换。
+
 As mentioned earlier, we declare a variable using the `var` statement -- notice there's no other *type* information in the declaration. Consider this simple program:
+
+正如前面提到过的一样，我们用 `var` 来声明一个变量 -- 注意在声明中没有任何 *类型* 信息。思考这个程序示例:
 
 ```js
 var amount = 99.99;
@@ -566,7 +574,11 @@ console.log( amount );		// "$199.98"
 
 The `amount` variable starts out holding the number `99.99`, and then holds the `number` result of `amount * 2`, which is `199.98`.
 
+`amount` 变量开始保存了 number 类型的值 `99.99` ，然后保存着 `amount * 2` 的结果值，也就是 `199.98` 。
+
 The first `console.log(..)` command has to *implicitly* coerce that `number` value to a `string` to print it out.
+
+第一个 `console.log(..)` 命令隐式转换了一个 `number` 类型的值成为 `string` 类型来打印它。
 
 Then the statement `amount = "$" + String(amount)` *explicitly* coerces the `199.98` value to a `string` and adds a `"$"` character to the beginning. At this point, `amount` now holds the `string` value `"$199.98"`, so the second `console.log(..)` statement doesn't need to do any coercion to print it out.
 
