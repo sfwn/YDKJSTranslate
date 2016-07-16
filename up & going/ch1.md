@@ -582,17 +582,31 @@ The first `console.log(..)` command has to *implicitly* coerce that `number` val
 
 Then the statement `amount = "$" + String(amount)` *explicitly* coerces the `199.98` value to a `string` and adds a `"$"` character to the beginning. At this point, `amount` now holds the `string` value `"$199.98"`, so the second `console.log(..)` statement doesn't need to do any coercion to print it out.
 
+然后 `amount = "$" + String(amount)` *明确的* 强制类型转换值 `199.98` 变成值 `"$199.98"`，所以第二个 `console.log(..)` 陈述不需要做任何强制类型转换就将值打印出来了。
+
 JavaScript developers will note the flexibility of using the `amount` variable for each of the `99.99`, `199.98`, and the `"$199.98"` values. Static-typing enthusiasts would prefer a separate variable like `amountStr` to hold the final `"$199.98"` representation of the value, because it's a different type.
+
+JavaScript 开发者将会注意到使用 `amount` 变量来表示 `99/99`，`199.98` 以及 `"$199.98"` 的复杂性。静态类型检查的热衷者推荐使用分开的变量像 `amountStr` 来保存最后的 `"$199.98"`，因为这是一个不同的类型。
 
 Either way, you'll note that `amount` holds a running value that changes over the course of the program, illustrating the primary purpose of variables: managing program *state*.
 
+另一方面是，你将会注意到 `amount` 保存了正在运行的值，虽然它们随着程序的进行而改变，说明了变量的主要目的: 管理程序 *状态* 。
+
 In other words, *state* is tracking the changes to values as your program runs.
+
+换句话说， *状态* 就是当你的程序运行时追踪值的变化。
 
 Another common usage of variables is for centralizing value setting. This is more typically called *constants*, when you declare a variable with a value and intend for that value to *not change* throughout the program.
 
+另一个关于变量的普遍用处是集中值的设置。这通常被称为 *常量* ，当你声明一个变量包含着值，而且在整个程序中它的值 *不会改变* 。
+
 You declare these *constants*, often at the top of a program, so that it's convenient for you to have one place to go to alter a value if you need to. By convention, JavaScript variables as constants are usually capitalized, with underscores `_` between multiple words.
 
+你声明了这些 *常量* ，通常在程序的顶部，所以当你需要改变一个值时你知道一个地方可以去是非常方便的。按照惯例，JavaScript 中的常量通常是大写的，而且在多个单词之间使用 `_` 连接。
+
 Here's a silly example:
+
+这是一个简答的傻瓜式的例子:
 
 ```js
 var TAX_RATE = 0.08;	// 8% sales tax
@@ -608,6 +622,8 @@ console.log( amount.toFixed( 2 ) );	// "215.98"
 ```
 
 **Note:** Similar to how `console.log(..)` is a function `log(..)` accessed as an object property on the `console` value, `toFixed(..)` here is a function that can be accessed on `number` values. JavaScript `number`s aren't automatically formatted for dollars -- the engine doesn't know what your intent is and there's no type for currency. `toFixed(..)` lets us specify how many decimal places we'd like the `number` rounded to, and it produces the `string` as necessary.
+
+**注意** 正如 `console.log(..)` 一样函数 `log(..)` 作为 `console` 的一个对象属性，`toFixed(..)` 是一个可以被 `number` 类型的值调用的方法。 JavaScript `number` 并不是自动地将值转换成美元 -- 引擎不知道你的目的是做什么而且当前没有 `类型` 。`toFixed(..)` 让我们制定 `number` 想要的小数部分，在必要的时候可以生产出 `string` 类型。
 
 The `TAX_RATE` variable is only *constant* by convention -- there's nothing special in this program that prevents it from being changed. But if the city raises the sales tax rate to 9%, we can still easily update our program by setting the `TAX_RATE` assigned value to `0.09` in one place, instead of finding many occurrences of the value `0.08` strewn throughout the program and updating all of them.
 
