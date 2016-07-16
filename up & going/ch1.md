@@ -429,29 +429,52 @@ While designed to help you, implicit coercion can create confusion if you haven'
 
 However, implicit coercion is a mechanism that *can be learned*, and moreover *should be learned* by anyone wishing to take JavaScript programming seriously. Not only is it not confusing once you learn the rules, it can actually make your programs better! The effort is well worth it.
 
+然而，隐式强制类型转换时一种 *可以被学习* 的机制，而且 *应该被学习* 被每一个想要真正认真学习 JavaScript 编程的人。不仅因为一旦你学会了隐式转换的规则之后不会感到疑惑，而且它实际上会使你的程序更加优秀！它带来的影响值得它被好好学习。
+
 **Note:** For more information on coercion, see Chapter 2 of this title and Chapter 4 of the *Types & Grammar* title of this series.
 
+**注意** 想获取更多有关强制类型转换(coercion)的消息，可以查看本书的第二章以及 *Types & Grammar* 这本书的第四章。
+
 ## Code Comments
+## 代码注释
 
 The phone store employee might jot down some notes on the features of a newly released phone or on the new plans her company offers. These notes are only for the employee -- they're not for customers to read. Nevertheless, these notes help the employee do her job better by documenting the hows and whys of what she should tell customers.
 
+手机店的员工也许会草草记下最近新出的手机的新特性或者是她所在的公司提供的最新计划。这些笔记仅仅是为了员工自己 -- 它们不是为了顾客去阅读的。然而，这些笔记通过记录店员应该如何和为何与顾客交谈来帮助店员更好地去完成她的工作。
+
 One of the most important lessons you can learn about writing code is that it's not just for the computer. Code is every bit as much, if not more, for the developer as it is for the compiler.
+
+一个非常重要的课你可以学到的是编写代码从来不只是为了计算机。代码不仅仅是为了编译器而写，也同样是为了开发者而写。
 
 Your computer only cares about machine code, a series of binary 0s and 1s, that comes from *compilation*. There's a nearly infinite number of programs you could write that yield the same series of 0s and 1s. The choices you make about how to write your program matter -- not only to you, but to your other team members and even to your future self.
 
+你的电脑只关心机器代码，那是一串的二进制0、1串，由 *编译 compilation* 而来。你可以在程序中写几乎无限多的0、1串。你选择如何更好地编写你的程序 -- 不仅仅是为了你， 也为了你小组的其他成员甚至是为了将来的你自己。
+
 You should strive not just to write programs that work correctly, but programs that make sense when examined. You can go a long way in that effort by choosing good names for your variables (see "Variables") and functions (see "Functions").
+
+你应该努力使你的程序不只是能够正常工作，而且能够在检查代码的时候可以一下就明白程序的含义。你可以从选择一个好的变量名(见 "变量")和好的程序名(见 "函数")中获得长远的收获。
 
 But another important part is code comments. These are bits of text in your program that are inserted purely to explain things to a human. The interpreter/compiler will always ignore these comments.
 
+但是另外一个很重要的部分就是代码注释。它们是你程序中的一些文字，仅仅是单纯的为了向别人去解释一些事情而插入的。解释器和编译器将会忽略这些注释。
+
 There are lots of opinions on what makes well-commented code; we can't really define absolute universal rules. But some observations and guidelines are quite useful:
 
+这里有许多观点有关如何编写注释良好的代码；我们不同真正定义绝对通用的规则。但是有些看法和指导意见确实很有帮助:
+
 * Code without comments is suboptimal.
+* 没有注释的代码不是最优的。
 * Too many comments (one per line, for example) is probably a sign of poorly written code.
+* 太多的注释(例如每一行都有注释)通常是代码写得很差的信号。
 * Comments should explain *why*, not *what*. They can optionally explain *how* if that's particularly confusing.
+* 注释应该解释代码这样写的 *原因(why)* ，而不是 *代码是什么(what)* 。如果代码有特别让人疑惑的地方，可以选择去解释代码是怎么写的(how)。
 
 In JavaScript, there are two types of comments possible: a single-line comment and a multiline comment.
 
+在 JavaScript 中，有两种类型的注释: 单行注释和多行注释。
+
 Consider:
+思考:
 
 ```js
 // This is a single-line comment
@@ -464,7 +487,11 @@ Consider:
 
 The `//` single-line comment is appropriate if you're going to put a comment right above a single statement, or even at the end of a line. Everything on the line after the `//` is treated as the comment (and thus ignored by the compiler), all the way to the end of the line. There's no restriction to what can appear inside a single-line comment.
 
+`//` 单行注释在单个声明的上面或者是一行的末尾比较合适。同一行中`//` 之后的所有东西都被认为是注释(因此会被编译器忽略)，一直到行的结束。单行注释的注释里面没有特别的约束。
+
 Consider:
+
+思考:
 
 ```js
 var a = 42;		// 42 is the meaning of life
@@ -472,7 +499,11 @@ var a = 42;		// 42 is the meaning of life
 
 The `/* .. */` multiline comment is appropriate if you have several lines worth of explanation to make in your comment.
 
+当你的注释有好几行解释时，多行注释是很合适的。
+
 Here's a common usage of multiline comments:
+
+这里是多行注释的一个通常用法:
 
 ```js
 /* The following value is used because
@@ -483,6 +514,8 @@ var a = 42;
 
 It can also appear anywhere on a line, even in the middle of a line, because the `*/` ends it. For example:
 
+多行注释可以出现在一行的任何地方，甚至是在一行的中间，因为 `*/` 可以结束它。例如:
+
 ```js
 var a = /* arbitrary value */ 42;
 
@@ -491,13 +524,23 @@ console.log( a );	// 42
 
 The only thing that cannot appear inside a multiline comment is a `*/`, because that would be interpreted to end the comment.
 
+多行注释中唯一不能出现的就是 `*/` ，因为 `*/` 会被解释为多行注释的结束。
+
 You will definitely want to begin your learning of programming by starting off with the habit of commenting code. Throughout the rest of this chapter, you'll see I use comments to explain things, so do the same in your own practice. Trust me, everyone who reads your code will thank you!
+
+你将会确切的想要开始你的编程学习通过写注释代码的习惯。在本章剩余部分的所有内容中，你将会看到我使用注释来解释事情，所以你也可以在你自己的实践中来这样做。相信我，每一个读到你代码的人都将会感激你。
 
 ## Variables
 
+## 变量
+
 Most useful programs need to track a value as it changes over the course of the program, undergoing different operations as called for by your program's intended tasks.
 
+大多数有用的程序需要跟踪一个值因为该值会在程序过程中变化，你的程序的计划好的任务将会使变量经历这样的变化。
+
 The easiest way to go about that in your program is to assign a value to a symbolic container, called a *variable* -- so called because the value in this container can *vary* over time as needed.
+
+最简单的在你的程序中实现变量的方法就是给符号容器附一个值，被称为 *变量* -- 这么叫是因为容器中的值随着时间的流逝可以按照需要变化。
 
 In some programming languages, you declare a variable (container) to hold a specific type of value, such as `number` or `string`. *Static typing*, otherwise known as *type enforcement*, is typically cited as a benefit for program correctness by preventing unintended value conversions.
 
