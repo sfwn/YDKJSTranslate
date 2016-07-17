@@ -655,10 +655,15 @@ By the way, that kind of "protection" against mistakes is similar to the static-
 **注意** 想要获取有关如何在程序中使用变量的不同值，请参考本系列的 *Types & Grammar* 一书。
 
 ## Blocks
+## 块
 
 The phone store employee must go through a series of steps to complete the checkout as you buy your new phone.
 
+当你买新手机的时候，手机店的店员必须经过一系列的步骤才能帮你完成购买。
+
 Similarly, in code we often need to group a series of statements together, which we often call a *block*. In JavaScript, a block is defined by wrapping one or more statements inside a curly-brace pair `{ .. }`. Consider:
+
+同样的，在代码中我们经常需要把一系列语句放在一起，我们称之为 *块 block* 。在 JavaScript 中，块是将一条或多条语句用大括号括起来。思考:
 
 ```js
 var amount = 99.99;
@@ -672,6 +677,8 @@ var amount = 99.99;
 
 This kind of standalone `{ .. }` general block is valid, but isn't as commonly seen in JS programs. Typically, blocks are attached to some other control statement, such as an `if` statement (see "Conditionals") or a loop (see "Loops"). For example:
 
+这种单独存在的 `{..}` 块是有效的，但是在 JS 程序中却不常见。通常来说，块依附于一些控制语句，例如 `if` (见 "条件 Conditionals")或者 循环(见 "循环 Loops")。例如:
+
 ```js
 var amount = 99.99;
 
@@ -684,15 +691,26 @@ if (amount > 10) {			// <-- block attached to `if`
 
 We'll explain `if` statements in the next section, but as you can see, the `{ .. }` block with its two statements is attached to `if (amount > 10)`; the statements inside the block will only be processed if the conditional passes.
 
+我们将会在下一节解释 `if` 语句，但是正如你所见，`{..}` 块包含了两条语句，依附于 `if (amount > 10)` ；块里的语句只有当条件成立时才会被执行。
+
 **Note:** Unlike most other statements like `console.log(amount);`, a block statement does not need a semicolon (`;`) to conclude it.
 
+**注意** 不想其他大多数语句一样，比如 `console.log(amount)` ，块不需要分号作为结尾。
+
 ## Conditionals
+## 条件
 
 "Do you want to add on the extra screen protectors to your purchase, for $9.99?" The helpful phone store employee has asked you to make a decision. And you may need to first consult the current *state* of your wallet or bank account to answer that question. But obviously, this is just a simple "yes or no" question.
 
+"你是否需要额外买一个屏幕保护器，只要9.99美元？"手机店的店员这样问你让你来做一个决定。你需要根据钱包或者是银行账户的情况来回答这个问题。但显而易见的是，这是一个简单的"是/否"的问题。
+
 There are quite a few ways we can express *conditionals* (aka decisions) in our programs.
 
+在我们的程序中有许多方式可以表示 *条件 conditionals* (正如 决定)。
+
 The most common one is the `if` statement. Essentially, you're saying, "*If* this condition is true, do the following...". For example:
+
+最常见的一个是 `if` 语句。本质上来说，你在说，"*if* 这个条件是真的，做下面这些事..."。例如:
 
 ```js
 var bank_balance = 302.13;
@@ -705,7 +723,11 @@ if (amount < bank_balance) {
 
 The `if` statement requires an expression in between the parentheses `( )` that can be treated as either `true` or `false`. In this program, we provided the expression `amount < bank_balance`, which indeed will either evaluate to `true` or `false` depending on the amount in the `bank_balance` variable.
 
+`if` 语句需要在圆括号中有一个表达式来表示 `true` 或 `false` 。在这个程序中，我们使用根据变量 `bank_balance` 最终会返回 `true` 或 `false` 的表达式 `amount < bank_balace` 。
+
 You can even provide an alternative if the condition isn't true, called an `else` clause. Consider:
+
+你可以提供一个可供选择的 `else` 子句，当条件不正确的时候使用它。思考:
 
 ```js
 const ACCESSORY_PRICE = 9.99;
@@ -728,17 +750,30 @@ else {
 
 Here, if `amount < bank_balance` is `true`, we'll print out `"I'll take the accessory!"` and add the `9.99` to our `amount` variable. Otherwise, the `else` clause says we'll just politely respond with `"No, thanks."` and leave `amount` unchanged.
 
+如果 `amount < bank_balance` 是 `true` ，我们将会打印 `"I'll take the accessory!"` 并且给变量 `amount` 加上 `9.99` 。否则，`else` 子句只会礼貌地回答 `"No, thanks"` 并且 `amount` 变量的值没有改变。
+
 As we discussed in "Values & Types" earlier, values that aren't already of an expected type are often coerced to that type. The `if` statement expects a `boolean`, but if you pass it something that's not already `boolean`, coercion will occur.
+
+正如我们在前面的 "Values & Types" 中讨论的一样，值如果不是期望的类型，那么就会被强制类型转换。`if` 语句期望一个 `boolean` 值，但如果你传入的不是一个 `boolean` 值，那么强制类型转换就会发生。
 
 JavaScript defines a list of specific values that are considered "falsy" because when coerced to a `boolean`, they become `false` -- these include values like `0` and `""`. Any other value not on the "falsy" list is automatically "truthy" -- when coerced to a `boolean` they become `true`. Truthy values include things like `99.99` and `"free"`. See "Truthy & Falsy" in Chapter 2 for more information.
 
+JavaScript 定义了一系列特殊的值会被强转为 `false` -- 比如 `0` 和 `""` 。其他任何不在 "falsy" 列表里的值都会被自动地转成 "truthy" -- 当被强转为 `boolean` 类型是值会变成 `true` 。会被强转为 `trur` 的值比如 `99.99` 和 `"free"` 。参考第二章中的 "Truthy & Falsy" 来获取更多信息。
+
 *Conditionals* exist in other forms besides the `if`. For example, the `switch` statement can be used as a shorthand for a series of `if..else` statements (see Chapter 2). Loops (see "Loops") use a *conditional* to determine if the loop should keep going or stop.
+
+*条件判断* 除了 `if` 之外还有其他形式。例如，`switch` 语句可以用来简化一系列的 `if..else` 语句 (见 第二章)。循环(见 "循环 Loops")使用 *条件判断* 来决定循环是继续还是停止。
 
 **Note:** For deeper information about the coercions that can occur implicitly in the test expressions of *conditionals*, see Chapter 4 of the *Types & Grammar* title of this series.
 
+**注意:** 获取更深入的关于测试 *条件判断* 表达式的隐式强制类型转换的消息，可以参考本系列的 *Types & Grammar* 一书中的第四章。
+
 ## Loops
+## 循环
 
 During busy times, there's a waiting list for customers who need to speak to the phone store employee. While there's still people on that list, she just needs to keep serving the next customer.
+
+在忙碌的时候，等待店员解答问题的顾客们有一个等待队伍。当这个队伍中还有人时，店员需要继续服务下一个顾客。
 
 Repeating a set of actions until a certain condition fails -- in other words, repeating only while the condition holds -- is the job of programming loops; loops can take different forms, but they all satisfy this basic behavior.
 
