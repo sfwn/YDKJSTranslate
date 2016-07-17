@@ -627,7 +627,11 @@ console.log( amount.toFixed( 2 ) );	// "215.98"
 
 The `TAX_RATE` variable is only *constant* by convention -- there's nothing special in this program that prevents it from being changed. But if the city raises the sales tax rate to 9%, we can still easily update our program by setting the `TAX_RATE` assigned value to `0.09` in one place, instead of finding many occurrences of the value `0.08` strewn throughout the program and updating all of them.
 
+变量 `TAX_RATE` 按照约定是唯一的 *常量* -- 在该程序中没有任何特殊的措施防止它改变。但是如果城市提高了税率到9%，我们仍然可以简单地通过将 `TAX_RATE` 设置为 `0.09` 在一个地方来解决问题，而不是找到每一个散落在程序中的 `0.08` 然后更新它们。
+
 The newest version of JavaScript at the time of this writing (commonly called "ES6") includes a new way to declare *constants*, by using `const` instead of `var`:
+
+写这本书时 JavaScript 的最新版本(是 "ES6")提供了一个新的声明 *常量* 的方法: 通过使用 `const` 而不是 `var`:
 
 ```js
 // as of ES6:
@@ -640,9 +644,15 @@ var amount = 99.99;
 
 Constants are useful just like variables with unchanged values, except that constants also prevent accidentally changing value somewhere else after the initial setting. If you tried to assign any different value to `TAX_RATE` after that first declaration, your program would reject the change (and in strict mode, fail with an error -- see "Strict Mode" in Chapter 2).
 
+常量就好像是一个拥有不会变化的值的变量，非常有用，除此之外常量还能够防止你在程序初始化好之后中不小心在程序中的某个地方修改了它的值。如果你在 `TAX_RATE` 已经赋值的情况下尝试重新赋不同的值，你的程序将会拒绝这次改变(而且在 严格 模式中，失败并且错误 -- 参考第二章中的 "严格模式 Strict Mode")。
+
 By the way, that kind of "protection" against mistakes is similar to the static-typing type enforcement, so you can see why static types in other languages can be attractive!
 
+顺便说一下，这种类型的 "保护 protection" 针对错误与静态类型检查强制转换类似，所以你可以看到为什么其他语言这么喜欢静态类型。
+
 **Note:** For more information about how different values in variables can be used in your programs, see the *Types & Grammar* title of this series.
+
+**注意** 想要获取有关如何在程序中使用变量的不同值，请参考本系列的 *Types & Grammar* 一书。
 
 ## Blocks
 
